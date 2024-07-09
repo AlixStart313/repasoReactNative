@@ -4,8 +4,8 @@ import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { Tab } from '@rneui/base'
 
-
-import HomeStack from './src/components/stack/HomeStack'
+import FormLogin from "./components/FormLogin"
+import HomeStack from './stack/HomeStack'
 
 const tab = createBottomTabNavigator()
 export default function Navigation() {
@@ -27,27 +27,3 @@ export default function Navigation() {
     </NavigationContainer>
   )
 }
-
-const styles = StyleSheet.create({
-  containerStyle:{
-    flex:1,
-    paddingTop:16,
-     flexDirection: 'column'
-  },
-  avatar: {
-    paddingTop:55,
-    paddingLeft:55,
-    backgroundColor: '#fff',
-    flexDirection: 'column',
-  },
-  text_name: {
-    fontWeight: 'bold',
-  },
-  text:{
-    alignItems:'center',
-  },
-  text_container:{
-    paddingTop:16,
-    paddingLeft:16
-  }
-});
